@@ -1,0 +1,673 @@
+fileFormatVersion: 2
+guid: 0c1cbe7a1ae57444398a1cd9b6b921dd
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Blue_Board
+    100002: Blue_Board_001
+    100004: Cabinat
+    100006: Ceiling
+    100008: Ceiling_001
+    100010: //RootNode
+    100012: Collum
+    100014: Collum_001
+    100016: Collum_002
+    100018: Computer_System
+    100020: Computer_System_001
+    100022: Computer_System_002
+    100024: Computer_System_003
+    100026: Computer_System_005
+    100028: Computer_System_006
+    100030: Computer_System_007
+    100032: Computer_System_008
+    100034: Computer_System_009
+    100036: Computer_System_010
+    100038: Computer_System_011
+    100040: Computer_System_012
+    100042: Computer_System_013
+    100044: Cube
+    100046: Cube_001
+    100048: Drawer
+    100050: Monitor
+    100052: Monitor_001
+    100054: Monitor_002
+    100056: Monitor_003
+    100058: Monitor_004
+    100060: Monitor_005
+    100062: Monitor_006
+    100064: Monitor_007
+    100066: Monitor_008
+    100068: Monitor_009
+    100070: Monitor_010
+    100072: Monitor_011
+    100074: Monitor_013
+    100076: Plane
+    100078: Plane_001
+    100080: Plane_002
+    100082: Poster_
+    100084: Poster__001
+    100086: Poster__002
+    100088: Poster__003
+    100090: Radiator_001
+    100092: T_V
+    100094: Table_1_001
+    100096: Table_1_002
+    100098: Table_Leg
+    100100: Table_Leg_001
+    100102: Table_Leg_002
+    100104: Tutpr_Desk
+    100106: Wheelie_Chair
+    100108: Wheelie_Chair_001
+    100110: Wheelie_Chair_002
+    100112: Wheelie_Chair_003
+    100114: Wheelie_Chair_004
+    100116: Wheelie_Chair_005
+    100118: Wheelie_Chair_006
+    100120: Wheelie_Chair_007
+    100122: Wheelie_Chair_008
+    100124: Wheelie_Chair_009
+    100126: Wheelie_Chair_010
+    100128: Wheelie_Chair_011
+    100130: Wheelie_Chair_013
+    100132: Wheelie_Chair_014
+    100134: White_Board
+    100136: White_Board_001
+    400000: Blue_Board
+    400002: Blue_Board_001
+    400004: Cabinat
+    400006: Ceiling
+    400008: Ceiling_001
+    400010: //RootNode
+    400012: Collum
+    400014: Collum_001
+    400016: Collum_002
+    400018: Computer_System
+    400020: Computer_System_001
+    400022: Computer_System_002
+    400024: Computer_System_003
+    400026: Computer_System_005
+    400028: Computer_System_006
+    400030: Computer_System_007
+    400032: Computer_System_008
+    400034: Computer_System_009
+    400036: Computer_System_010
+    400038: Computer_System_011
+    400040: Computer_System_012
+    400042: Computer_System_013
+    400044: Cube
+    400046: Cube_001
+    400048: Drawer
+    400050: Monitor
+    400052: Monitor_001
+    400054: Monitor_002
+    400056: Monitor_003
+    400058: Monitor_004
+    400060: Monitor_005
+    400062: Monitor_006
+    400064: Monitor_007
+    400066: Monitor_008
+    400068: Monitor_009
+    400070: Monitor_010
+    400072: Monitor_011
+    400074: Monitor_013
+    400076: Plane
+    400078: Plane_001
+    400080: Plane_002
+    400082: Poster_
+    400084: Poster__001
+    400086: Poster__002
+    400088: Poster__003
+    400090: Radiator_001
+    400092: T_V
+    400094: Table_1_001
+    400096: Table_1_002
+    400098: Table_Leg
+    400100: Table_Leg_001
+    400102: Table_Leg_002
+    400104: Tutpr_Desk
+    400106: Wheelie_Chair
+    400108: Wheelie_Chair_001
+    400110: Wheelie_Chair_002
+    400112: Wheelie_Chair_003
+    400114: Wheelie_Chair_004
+    400116: Wheelie_Chair_005
+    400118: Wheelie_Chair_006
+    400120: Wheelie_Chair_007
+    400122: Wheelie_Chair_008
+    400124: Wheelie_Chair_009
+    400126: Wheelie_Chair_010
+    400128: Wheelie_Chair_011
+    400130: Wheelie_Chair_013
+    400132: Wheelie_Chair_014
+    400134: White_Board
+    400136: White_Board_001
+    2300000: Blue_Board
+    2300002: Blue_Board_001
+    2300004: Cabinat
+    2300006: Ceiling
+    2300008: Ceiling_001
+    2300010: Collum
+    2300012: Collum_001
+    2300014: Collum_002
+    2300016: Computer_System
+    2300018: Computer_System_001
+    2300020: Computer_System_002
+    2300022: Computer_System_003
+    2300024: Computer_System_005
+    2300026: Computer_System_006
+    2300028: Computer_System_007
+    2300030: Computer_System_008
+    2300032: Computer_System_009
+    2300034: Computer_System_010
+    2300036: Computer_System_011
+    2300038: Computer_System_012
+    2300040: Computer_System_013
+    2300042: Cube
+    2300044: Cube_001
+    2300046: Drawer
+    2300048: Monitor
+    2300050: Monitor_001
+    2300052: Monitor_002
+    2300054: Monitor_003
+    2300056: Monitor_004
+    2300058: Monitor_005
+    2300060: Monitor_006
+    2300062: Monitor_007
+    2300064: Monitor_008
+    2300066: Monitor_009
+    2300068: Monitor_010
+    2300070: Monitor_011
+    2300072: Monitor_013
+    2300074: Plane
+    2300076: Plane_001
+    2300078: Plane_002
+    2300080: Poster_
+    2300082: Poster__001
+    2300084: Poster__002
+    2300086: Poster__003
+    2300088: Radiator_001
+    2300090: T_V
+    2300092: Table_1_001
+    2300094: Table_1_002
+    2300096: Table_Leg
+    2300098: Table_Leg_001
+    2300100: Table_Leg_002
+    2300102: Tutpr_Desk
+    2300104: Wheelie_Chair
+    2300106: Wheelie_Chair_001
+    2300108: Wheelie_Chair_002
+    2300110: Wheelie_Chair_003
+    2300112: Wheelie_Chair_004
+    2300114: Wheelie_Chair_005
+    2300116: Wheelie_Chair_006
+    2300118: Wheelie_Chair_007
+    2300120: Wheelie_Chair_008
+    2300122: Wheelie_Chair_009
+    2300124: Wheelie_Chair_010
+    2300126: Wheelie_Chair_011
+    2300128: Wheelie_Chair_013
+    2300130: Wheelie_Chair_014
+    2300132: White_Board
+    2300134: White_Board_001
+    3300000: Blue_Board
+    3300002: Blue_Board_001
+    3300004: Cabinat
+    3300006: Ceiling
+    3300008: Ceiling_001
+    3300010: Collum
+    3300012: Collum_001
+    3300014: Collum_002
+    3300016: Computer_System
+    3300018: Computer_System_001
+    3300020: Computer_System_002
+    3300022: Computer_System_003
+    3300024: Computer_System_005
+    3300026: Computer_System_006
+    3300028: Computer_System_007
+    3300030: Computer_System_008
+    3300032: Computer_System_009
+    3300034: Computer_System_010
+    3300036: Computer_System_011
+    3300038: Computer_System_012
+    3300040: Computer_System_013
+    3300042: Cube
+    3300044: Cube_001
+    3300046: Drawer
+    3300048: Monitor
+    3300050: Monitor_001
+    3300052: Monitor_002
+    3300054: Monitor_003
+    3300056: Monitor_004
+    3300058: Monitor_005
+    3300060: Monitor_006
+    3300062: Monitor_007
+    3300064: Monitor_008
+    3300066: Monitor_009
+    3300068: Monitor_010
+    3300070: Monitor_011
+    3300072: Monitor_013
+    3300074: Plane
+    3300076: Plane_001
+    3300078: Plane_002
+    3300080: Poster_
+    3300082: Poster__001
+    3300084: Poster__002
+    3300086: Poster__003
+    3300088: Radiator_001
+    3300090: T_V
+    3300092: Table_1_001
+    3300094: Table_1_002
+    3300096: Table_Leg
+    3300098: Table_Leg_001
+    3300100: Table_Leg_002
+    3300102: Tutpr_Desk
+    3300104: Wheelie_Chair
+    3300106: Wheelie_Chair_001
+    3300108: Wheelie_Chair_002
+    3300110: Wheelie_Chair_003
+    3300112: Wheelie_Chair_004
+    3300114: Wheelie_Chair_005
+    3300116: Wheelie_Chair_006
+    3300118: Wheelie_Chair_007
+    3300120: Wheelie_Chair_008
+    3300122: Wheelie_Chair_009
+    3300124: Wheelie_Chair_010
+    3300126: Wheelie_Chair_011
+    3300128: Wheelie_Chair_013
+    3300130: Wheelie_Chair_014
+    3300132: White_Board
+    3300134: White_Board_001
+    4300000: Plane_002
+    4300002: Wheelie_Chair_014
+    4300004: Ceiling_001
+    4300006: Ceiling
+    4300008: Radiator_001
+    4300010: T_V
+    4300012: Drawer
+    4300014: Computer_System_013
+    4300016: Monitor_013
+    4300018: Wheelie_Chair_013
+    4300020: Tutpr_Desk
+    4300022: Cube_001
+    4300024: Computer_System_012
+    4300026: Computer_System_011
+    4300028: Computer_System_010
+    4300030: Computer_System_009
+    4300032: Computer_System_008
+    4300034: Computer_System_007
+    4300036: Computer_System_006
+    4300038: Computer_System_005
+    4300040: Plane_001
+    4300042: Poster__003
+    4300044: Poster__002
+    4300046: Poster__001
+    4300048: Poster_
+    4300050: White_Board_001
+    4300052: White_Board
+    4300054: Cube
+    4300056: Blue_Board_001
+    4300058: Blue_Board
+    4300060: Cabinat
+    4300062: Computer_System_003
+    4300064: Wheelie_Chair_011
+    4300066: Wheelie_Chair_010
+    4300068: Wheelie_Chair_009
+    4300070: Wheelie_Chair_008
+    4300072: Wheelie_Chair_007
+    4300074: Wheelie_Chair_006
+    4300076: Wheelie_Chair_005
+    4300078: Wheelie_Chair_004
+    4300080: Wheelie_Chair_003
+    4300082: Wheelie_Chair_002
+    4300084: Wheelie_Chair_001
+    4300086: Wheelie_Chair
+    4300088: Computer_System_002
+    4300090: Monitor_011
+    4300092: Monitor_010
+    4300094: Monitor_009
+    4300096: Table_Leg_002
+    4300098: Collum_002
+    4300100: Table_1_002
+    4300102: Monitor_008
+    4300104: Monitor_007
+    4300106: Table_1_001
+    4300108: Collum_001
+    4300110: Table_Leg_001
+    4300112: Monitor_006
+    4300114: Monitor_005
+    4300116: Monitor_004
+    4300118: Computer_System_001
+    4300120: Plane
+    4300122: Computer_System
+    4300124: Monitor_003
+    4300126: Monitor_002
+    4300128: Monitor_001
+    4300130: Table_Leg
+    4300132: Collum
+    4300134: Monitor
+    7400000: Default Take
+    9500000: //RootNode
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Back_001
+    second: {fileID: 2100000, guid: f46871ebd99385e4285994d2a6525afc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Base__Radiator_Map
+    second: {fileID: 2100000, guid: ad7884e9ffbba9240b4d61ae992aad00, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cabinat__Cabinat_Map
+    second: {fileID: 2100000, guid: cff4e344d1f4bfe4580025ff2dda31fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door
+    second: {fileID: 2100000, guid: 273f0ccc34d7b2248890ed577f9a0452, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door_001__Cabinat_Map
+    second: {fileID: 2100000, guid: cff4e344d1f4bfe4580025ff2dda31fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fabric
+    second: {fileID: 2100000, guid: 89bf8646cda1af84180f3f96395f5de6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fabric_002
+    second: {fileID: 2100000, guid: 278e0381ac6feba46a90f13bff84cf66, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Floor__Room_Map_
+    second: {fileID: 2100000, guid: e6b40ef846022494aa5869cae5c9b281, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Frame_002
+    second: {fileID: 2100000, guid: da3ef08cc760653448f0ac012eaa41c9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Frame_003
+    second: {fileID: 2100000, guid: a29d00d6d9281944d864287deab83722, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Frame__T_V_Map
+    second: {fileID: 2100000, guid: 0adaa10c190fbb944a980d8fbdfb377e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: G_Frames__Room_Map_
+    second: {fileID: 2100000, guid: fa528f8222ff49d4c93261bcadbba235, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handle_001
+    second: {fileID: 2100000, guid: 71883b6c7b9526a44a9016de5ca5e553, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Handle__Drawer_Map
+    second: {fileID: 2100000, guid: b739946105a67064792450ae974a4409, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Knob__Radiator_Map
+    second: {fileID: 2100000, guid: 3bd968f3e275974418a503d617757dff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Leg_PLastic
+    second: {fileID: 2100000, guid: 5bf3fb3c14036964e8c2d45800ee5775, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lights__Ceiling_Map
+    second: {fileID: 2100000, guid: 986829e496a898c4bbbff8f3d908b73c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_001__Computer_Map
+    second: {fileID: 2100000, guid: db539ec0bad2aa6448d2503f996d60c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_004__Ceiling_Map
+    second: {fileID: 2100000, guid: 986829e496a898c4bbbff8f3d908b73c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material__Computer_Map
+    second: {fileID: 2100000, guid: db539ec0bad2aa6448d2503f996d60c1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal
+    second: {fileID: 2100000, guid: 95b6ed1319f604d40965573b8ef75b10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_001
+    second: {fileID: 2100000, guid: ee4efe79aab345641bec4963317b8455, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Metal_004__Tutor_Desk_Map
+    second: {fileID: 2100000, guid: da9b174ab06891d48912e0a0856620b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Monitor_base
+    second: {fileID: 2100000, guid: bb430aa37bdd0d84f8ad7cf0a83fa898, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Plasic
+    second: {fileID: 2100000, guid: e2cc34bad23fb2749bc004e08d127df3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Poster_3__14696804_10208716510323385_723094642_n_jpg
+    second: {fileID: 2100000, guid: 2d74a6a3ac4307249b3cca26fe385bd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Poster__002__Poster_1_Map_001
+    second: {fileID: 2100000, guid: 2e76946efee0d92479a80bcc457e5af8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Poster__003__Poster_2_Map_001
+    second: {fileID: 2100000, guid: f4f8acb059c257c40bb77cde762d1177, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Poster__14686267_10208716510483389_1858478065_n_jpg
+    second: {fileID: 2100000, guid: e4ab8d44380078043a7028a49f081e71, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: R_wall__Room_Map_
+    second: {fileID: 2100000, guid: ffd063c9c2752ce4e8915ccb781310bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Screen
+    second: {fileID: 2100000, guid: 34a456e39ae35194f8afb53efba97359, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Screen_002__T_V_Map
+    second: {fileID: 2100000, guid: 0adaa10c190fbb944a980d8fbdfb377e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Seam__Cabinat_Map
+    second: {fileID: 2100000, guid: cff4e344d1f4bfe4580025ff2dda31fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Steel
+    second: {fileID: 2100000, guid: 95b6ed1319f604d40965573b8ef75b10, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Table_wood__TexturesCom_WoodFine0005_1_seamless_S_jpg
+    second: {fileID: 2100000, guid: 1cc3dd2c0f520d14bb065af6a35c6261, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Top__Radiator_Map
+    second: {fileID: 2100000, guid: f0271cace6e98624d92a7b3121ccc345, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Trunking
+    second: {fileID: 2100000, guid: 685a1a5b9a571f94e838b9e8e512ce1c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vent__Vent_Map
+    second: {fileID: 2100000, guid: e194931835966e1478c6a2bd77b4ffea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Vent_p__Vent_Map
+    second: {fileID: 2100000, guid: e194931835966e1478c6a2bd77b4ffea, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wall__Room_Map_
+    second: {fileID: 2100000, guid: 7c8ee47394a46ed458200fde72e53fab, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White
+    second: {fileID: 2100000, guid: 4f62827412d8d294589fb372b4ad813f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: White_Board
+    second: {fileID: 2100000, guid: 89f1fa67cea2e174e9c66ce70b38aa84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Window
+    second: {fileID: 2100000, guid: 2b93926ed60567f47bf4693b82d131dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Windows__Room_Map_
+    second: {fileID: 2100000, guid: 27afce8b28f2f2248b30927705d2e660, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood_001__Drawer_Map
+    second: {fileID: 2100000, guid: b739946105a67064792450ae974a4409, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood__Tutor_Desk_Map
+    second: {fileID: 2100000, guid: da9b174ab06891d48912e0a0856620b5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: bars__Radiator_Map
+    second: {fileID: 2100000, guid: d2a677fafa5e8a54588cb6370cf446ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: unnamed
+    second: {fileID: 2100000, guid: 143907efdf84b8f43a450cc1ab2c224b, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 0
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
