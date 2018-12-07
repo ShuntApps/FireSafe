@@ -15,6 +15,7 @@ public class binFireController : MonoBehaviour {
     public TextMeshProUGUI pin;
     public TextMeshProUGUI alarm;
     public TextMeshProUGUI fuelLeft;
+    public TextMeshProUGUI scoreTxt;
 
 	// Use this for initialization
 	void Start () {		
@@ -50,12 +51,18 @@ public class binFireController : MonoBehaviour {
         {
             score -= 1500;
         }
-        score -= (int)(endTime * 30);
+        score -= (int)(endTime);
+        if(wrongExtinguisherUsed!=true)
+        {
+            extinguisher.color=Color.white;
+        }
+        scoreTxt.text=score.ToString();
         //more processing of other data
     }
 
     void wrongExtinguisher()
     {
+        extinguisher.color=Color.red;
         //set vars to ensure flags can be set in GUI
         wrongExtinguisherUsed = true;
         score -= 1000;
@@ -63,17 +70,20 @@ public class binFireController : MonoBehaviour {
 
     void forgotPin()
     {
+        pin.color=Color.red;
         forgotPinPull = true;
         score -= 500;
     }
 
     void extinguisherRanOut()
     {
+        fuelLeft.color=Color.red;
         score -= 500;
     }
 
     void alarmIsPressed()
     {
+        alarm.color=Color.white;
         alarmPressed = true;
     }
 }
