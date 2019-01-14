@@ -5,7 +5,7 @@ using VRTK;
 
 public class AlarmVRTKInteractableObject : MonoBehaviour {
 
-    bool pressed;
+    public bool pressed;
     public AudioSource alarm;
 
 	// Use this for initialization
@@ -18,22 +18,28 @@ public class AlarmVRTKInteractableObject : MonoBehaviour {
 		
 	}
 
+    public void Test()
+    {
+        print("WTF");
+    }
+
     public void Press()
     {
-        pressed = true;
+        
         if (!pressed)
         {
             alarm.Play();
             NewEventManager.TriggerEvent("alarmPressed");
             GetComponent<VRTK_InteractableObject>().enabled = false;
         }
+        pressed = true;
             // GetComponent<VRTK_InteractableObject>().enabled = false;
 
     }
 
     protected virtual void InteractableObjectUsed(object sender, InteractableObjectEventArgs e)
     {
-        print("fire");
+        //print("fire");
     }
 
     protected virtual void InteractableObjectUnused(object sender, InteractableObjectEventArgs e)

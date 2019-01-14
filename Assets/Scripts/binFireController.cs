@@ -83,7 +83,7 @@ public class binFireController : MonoBehaviour {
 
     void alarmIsPressed()
     {
-        alarm.color=Color.white;
+        alarm.color=Color.green;
         alarmPressed = true;
     }
 }

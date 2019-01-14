@@ -12,6 +12,8 @@ public class FireCheck : MonoBehaviour {
     public float shrinkSpeed = 0.1f;
     public bool shrinking;
 
+    public bool isElectrical = false;
+
     // Use this for initialization
     void Start () {
 		
@@ -56,7 +58,7 @@ public class FireCheck : MonoBehaviour {
 
     IEnumerator rapidOut()
     {
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
         ParticleSystem[] particles = GetComponentsInChildren<ParticleSystem>();
         foreach (ParticleSystem p in particles)
         {
