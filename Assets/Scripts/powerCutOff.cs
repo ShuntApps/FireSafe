@@ -8,7 +8,8 @@ public class powerCutOff : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		mat=GetComponent<Material>();
+		Renderer ren = GetComponent<Renderer>();
+		mat=ren.material;
 	}
 	
 	// Update is called once per frame
@@ -19,7 +20,7 @@ public class powerCutOff : MonoBehaviour {
 	[ContextMenu("turnOffPower")]
 	public void turnOffPower()
 	{
-		mat.SetColor("_EmissionColor", Color.grey);
+		mat.SetColor("_EmissionColor", Color.green);
 		NewEventManager.TriggerEvent("powerOff");
 	}
 }

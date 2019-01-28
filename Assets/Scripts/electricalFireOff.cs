@@ -8,17 +8,18 @@ public class electricalFireOff : MonoBehaviour {
 
    private void OnEnable()
     {
-        NewEventManager.StartListening("fireOut", manageFire);
+        NewEventManager.StartListening("powerOff", manageFire);
     }
 
     private void OnDisable()
     {
-        NewEventManager.StopListening("fireOut", manageFire);
+        NewEventManager.StopListening("powerOff", manageFire);
     }
 
 	public void manageFire()
 	{
 		GetComponent<FireCheck>().enabled=true;
+		GetComponent<FireCheck>().allowWater=true;
 	}
 
 	// Use this for initialization

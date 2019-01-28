@@ -26,7 +26,15 @@ public class FireCheck : MonoBehaviour {
         //print(other.tag);
         if(other.tag=="Water"&&allowWater)
         {
+            if(isElectrical)
+            {
+                NewEventManager.TriggerEvent("WaterOnElectricOff");
+            }
             ShrinkFire();
+        }
+        else if(other.tag=="Water"&&isElectrical)
+        {
+            waterOnElectric();
         }
         else if(other.tag=="Foam"&&allowFoam)
         {
@@ -36,6 +44,15 @@ public class FireCheck : MonoBehaviour {
         {
             blanketFire();
         }
+    }
+
+    [ContextMenu(" electricTest")]
+    private void waterOnElectric()
+    {
+         for(int i=0;i<transform.childCount;i++)
+            {
+                transform.GetChild(i).localScale=new Vector3(3,3,3);
+            }
     }
 
     private void OnTriggerExit(Collider other)
