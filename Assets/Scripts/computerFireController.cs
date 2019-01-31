@@ -48,9 +48,11 @@ public class computerFireController : MonoBehaviour {
 
 	public void waterOnElectric()
 	{
+        print("wrong Extinguisher used");
 		extinguisher.color=Color.red;
         //set vars to ensure flags can be set in GUI
         wrongExtinguisherUsed = true;
+        wrongExtinguisher();
         score -= 1000;
 	}
 
