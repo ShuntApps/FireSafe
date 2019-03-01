@@ -166,6 +166,7 @@ GameObject:
   - component: {fileID: 114853812632897812}
   - component: {fileID: 65667640529702620}
   - component: {fileID: 136322632020077686}
+  - component: {fileID: 114527743863241898}
   m_Layer: 0
   m_Name: FireExtinguisher_Main
   m_TagString: Untagged
@@ -1010,7 +1011,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 1
+  holdButtonToGrab: 0
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -1026,6 +1027,25 @@ MonoBehaviour:
   objectHighlighter: {fileID: 0}
   touchHighlightColor: {r: 0, g: 0, b: 0, a: 0}
   usingState: 0
+--- !u!114 &114527743863241898
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1449711522656066}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abc4b5dd2be1cea4aaea2850b910d3f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nearTouchHighlight: {r: 0.9811321, g: 0.90589947, b: 0, a: 0}
+  touchHighlight: {r: 0.5886734, g: 0.8113208, b: 0.4477572, a: 0}
+  grabHighlight: {r: 0, g: 0, b: 0, a: 0}
+  useHighlight: {r: 0, g: 0, b: 0, a: 0}
+  objectToMonitor: {fileID: 0}
+  objectToHighlight: {fileID: 1286468083548306}
+  objectHighlighter: {fileID: 0}
+  objectToAffect: {fileID: 0}
 --- !u!114 &114532483507089274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1053,7 +1073,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 1
+  holdButtonToGrab: 0
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -1524,10 +1544,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.014
-  m_Height: 0.16
+  m_Radius: 0.03521804
+  m_Height: 0.15999998
   m_Direction: 2
-  m_Center: {x: 0, y: 0.25, z: -0.05}
+  m_Center: {x: -1.1250286e-16, y: 0.24647132, z: -0.05}
 --- !u!136 &136464976077594936
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -1537,10 +1557,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.02
+  m_Radius: 0.029312182
   m_Height: 0.08
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0.005}
+  m_Center: {x: -1.1629286e-15, y: -0.0035563605, z: 0.005000001}
 --- !u!145 &145795841810698856
 SpringJoint:
   m_ObjectHideFlags: 1

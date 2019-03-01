@@ -127,6 +127,7 @@ GameObject:
   - component: {fileID: 114053275454728508}
   - component: {fileID: 65301213858410608}
   - component: {fileID: 136469535104776804}
+  - component: {fileID: 114975999625036410}
   m_Layer: 0
   m_Name: FireExtinguisher_Main
   m_TagString: Untagged
@@ -825,8 +826,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.1608538, y: 0.39512897, z: 0.15840268}
-  m_Center: {x: -0.0034269094, y: -0.012435533, z: -0.0022013485}
+  m_Size: {x: 0.1608538, y: 0.40787408, z: 0.15840268}
+  m_Center: {x: -0.0034269113, y: -0.006063109, z: -0.0022013485}
 --- !u!82 &82569062871901308
 AudioSource:
   m_ObjectHideFlags: 1
@@ -988,7 +989,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 1
+  holdButtonToGrab: 0
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -1091,7 +1092,7 @@ MonoBehaviour:
   allowedTouchControllers: 0
   ignoredColliders: []
   isGrabbable: 1
-  holdButtonToGrab: 1
+  holdButtonToGrab: 0
   stayGrabbedOnTeleport: 1
   validDrop: 1
   grabOverrideButton: 0
@@ -1369,6 +1370,25 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: VRTK.UnityEventHelper.VRTK_InteractableObject_UnityEvents+InteractableObjectEvent,
       Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+--- !u!114 &114975999625036410
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1448505851649164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abc4b5dd2be1cea4aaea2850b910d3f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nearTouchHighlight: {r: 0.990566, g: 0.9365783, b: 0.014017418, a: 0}
+  touchHighlight: {r: 0.8068199, g: 0.9150943, b: 0.5222944, a: 0}
+  grabHighlight: {r: 0, g: 0, b: 0, a: 0}
+  useHighlight: {r: 0, g: 0, b: 0, a: 0}
+  objectToMonitor: {fileID: 0}
+  objectToHighlight: {fileID: 1791653777914596}
+  objectHighlighter: {fileID: 0}
+  objectToAffect: {fileID: 0}
 --- !u!114 &114990600770040934
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1511,10 +1531,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.014
+  m_Radius: 0.039316207
   m_Height: 0.16
   m_Direction: 2
-  m_Center: {x: 0, y: 0.25, z: -0.05}
+  m_Center: {x: -1.4605622e-16, y: 0.246931, z: -0.050000012}
 --- !u!136 &136708823146326056
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -1524,10 +1544,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.02
+  m_Radius: 0.03437849
   m_Height: 0.08
   m_Direction: 2
-  m_Center: {x: 0, y: 0, z: 0.005}
+  m_Center: {x: -0.0014116864, y: 2.0512792e-15, z: 0.0049999976}
 --- !u!136 &136749624630006214
 CapsuleCollider:
   m_ObjectHideFlags: 1
