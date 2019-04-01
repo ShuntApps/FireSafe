@@ -13,21 +13,23 @@ public class findHazardController : MonoBehaviour {
 	public TextMeshProUGUI plugs;
 	public TextMeshProUGUI heating;
 	public TextMeshProUGUI flammable;
+	public TextMeshProUGUI wrongCount;
 
 	int score;
-	
-	 
+
+	int numFound;
+
+	int numright;
 
 	// Use this for initialization
 	void Start () {
-		
+		wrongCount.text=""+(numFound-numright);
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		
 	}
-// /		palletsunsafe,blockedExit,waterunsafe,boxesunsafe,plugsunsafe,heatingunsafe,flammableunsafe
 
 	private void OnEnable() {
 		NewEventManager.StartListening("plugsunsafe",plugsMarked);
@@ -50,40 +52,103 @@ public class findHazardController : MonoBehaviour {
 	void exitBlocked()
 	{
 		blockedExit.color=Color.green;
+		numFound++;
+		numright++;
+		if(numFound>=6)
+		{
+			float timeScore = Time.timeSinceLevelLoad;
+			score=(int)timeScore + (numright*1000);
+		}
 	}
 
 	void waterSpill()
 	{
 		water.color=Color.green;
+				numFound++;
+				numright++;
+		if(numFound>=6)
+		{
+			float timeScore = Time.timeSinceLevelLoad;
+			score=(int)timeScore + (numright*1000);
+		}
 	}
 
 	void flammables()
 	{
 		flammable.color=Color.green;
+				numFound++;
+				numright++;
+		if(numFound>=6)
+		{
+			float timeScore = Time.timeSinceLevelLoad;
+			score=(int)timeScore + (numright*1000);
+		}
 	}
 
 	void boxesUnsafe()
 	{
 		boxes.color=Color.green;
+				numFound++;
+				numright++;
+		if(numFound>=6)
+		{
+			float timeScore = Time.timeSinceLevelLoad;
+			score=(int)timeScore + (numright*1000);
+		}
 	}
 	
 	private void OnDisable() {
+		NewEventManager.StopListening("plugsunsafe",plugsMarked);
 		
+		NewEventManager.StopListening("palletsunsafe",palletsMarked);
+		
+		NewEventManager.StopListening("blockedExit",exitBlocked);
+		
+		NewEventManager.StopListening("waterunsafe",waterSpill);
+		
+		NewEventManager.StopListening("boxesunsafe",boxesUnsafe);
+
+		NewEventManager.StopListening("flammableunsafe",flammables);
+
+		NewEventManager.StopListening("heatingunsafe",plugsMarked);
+
+		NewEventManager.StopListening("wrongGuess",wrongGuess);
 	}
 
 	void plugsMarked()
 	{
 		Debug.Log("plugs marked");
 		plugs.color=Color.green;
+				numFound++;
+				numright++;
+		if(numFound>=6)
+		{
+			float timeScore = Time.timeSinceLevelLoad;
+			score=(int)timeScore + (numright*1000);
+		}
 	}
 
 	void palletsMarked()
 	{
 		pallets.color=Color.green;
+				numFound++;
+				numright++;
+		if(numFound>=6)
+		{
+			float timeScore = Time.timeSinceLevelLoad;
+			score=(int)timeScore + (numright*1000);
+		}
 	}
 
 	void wrongGuess()
 	{
 		score-=2500;
+		numFound++;
+		wrongCount.text = ""+(numFound-numright);
+		if(numFound>=6)
+		{
+			float timeScore = Time.timeSinceLevelLoad;
+			score=(int)timeScore + (numright*1000);
+		}
 	}
 }

@@ -13,6 +13,7 @@ public class FireCheck : MonoBehaviour {
     public bool shrinking;
 
     public bool isElectrical = false;
+    public bool isDemoFire;
 
     // Use this for initialization
     void Start () {
