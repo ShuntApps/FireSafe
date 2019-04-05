@@ -180,7 +180,7 @@ namespace LIV.SDK.Unity
             _mrCamera.backgroundColor = Color.clear;
 
             _clipQuad.SetActive(true);
-            
+
             _mrCamera.targetTexture = _foregroundTexture;
             _foregroundTexture.DiscardContents(true, true);
             _mrCamera.Render();

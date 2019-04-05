@@ -71,7 +71,7 @@ public class binFireController : MonoBehaviour {
     void forgotPin()
     {
         pin.color=Color.red;
-        forgotPinPull = true;
+        forgotPinPull=true;
         score -= 500;
     }
 

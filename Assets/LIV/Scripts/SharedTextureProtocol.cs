@@ -14,6 +14,7 @@ namespace LIV.SDK.Unity
         static extern IntPtr GetRenderEventFunc();
 
         [DllImport("LIV_MR", EntryPoint = "LivCaptureIsActive")]
+        [return: MarshalAs(UnmanagedType.U1)]
         static extern bool GetIsCaptureActive();
 
         [DllImport("LIV_MR", EntryPoint = "LivCaptureWidth")]

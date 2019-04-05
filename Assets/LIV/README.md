@@ -1,4 +1,4 @@
-# LIV SDK v0.1.0 for Unity
+# LIV SDK v0.1.5 for Unity
 
 ## Quick Start
 
@@ -49,10 +49,17 @@ To fix this, you can disable the effect specifically on the foreground pass of t
 2. Open `MixedRealityRender.cs` and locate `RenderNear()`.
 3. Add lines here to disable the post-processing effect on `_mrCamera.gameObject`, and make sure you re-enable them after `_mrCamera.Render()` has been called!
 
+### My game's output goes into split screen / looks broken with LIV active!
+
+Usually, this is a `SteamVR_ExternalCamera` conflict. We use the same config name for backwards compatibility, though this is being phased out.
+To fix, simply find all `SteamVR_Render` components and set `External Camera Config Name` to `externalcamera-legacy.cfg`.
+
+This will soft-disable SteamVR_ExternalCamera so that it cannot be active when LIV is, while keeping the old functionality.
+
 
 ### The namespace `Valve.VR` already contains a definition for ...
 
-You have two copies of the file `openvr_api.cs` in your assets. Delete one of them, ideally not the one in the LIV SDK. Generally speaking, it's safe to update this file. You'll see compile-time errors if something significant has changed!
+You have two copies of the file `openvr_api.cs` in your assets. Delete one of them, ideally the one in the LIV SDK. Generally speaking, it's safe to update this file. You'll see compile-time errors if something significant has changed!
 
 
 ### `Valve.VR.ETrackedControllerRole` does not contain a definition for `OptOut`
