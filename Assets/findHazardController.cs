@@ -15,6 +15,15 @@ public class findHazardController : MonoBehaviour {
 	public TextMeshProUGUI flammable;
 	public TextMeshProUGUI wrongCount;
 
+    public TextMeshProUGUI extinguisherSpectator;
+    public TextMeshProUGUI pinSpectator;
+    public TextMeshProUGUI alarmSpectator;
+    public TextMeshProUGUI fuelLeftSpectator;
+    public TextMeshProUGUI scoreTxtSpectator;
+
+    public string name;
+    public playerDataScriptableObject playerData;
+
 	int score;
 
 	int numFound;
@@ -23,6 +32,7 @@ public class findHazardController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        name=playerData.playerName;
 		wrongCount.text=""+(numFound-numright);
 	}
 	

@@ -11,6 +11,8 @@ public class binFireController : MonoBehaviour {
     bool forgotPinPull;
     int score=9000;
     bool alarmPressed;
+    bool fuelLeftBool;
+
     public TextMeshProUGUI extinguisher;
     public TextMeshProUGUI pin;
     public TextMeshProUGUI alarm;
@@ -22,6 +24,9 @@ public class binFireController : MonoBehaviour {
     public TextMeshProUGUI alarmSpectator;
     public TextMeshProUGUI fuelLeftSpectator;
     public TextMeshProUGUI scoreTxtSpectator;
+    public TextMeshProUGUI nameTxtSpectator;
+
+    public GameObject buttonCert;
 
     public string name;
     public playerDataScriptableObject playerData;
@@ -29,6 +34,9 @@ public class binFireController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         name=playerData.playerName;
+        nameTxtSpectator.text = "User: " + name;
+        buttonCert.SetActive(false);
+        fuelLeftBool = true;
 	}
 	
 	// Update is called once per frame
@@ -58,27 +66,34 @@ public class binFireController : MonoBehaviour {
         Debug.Log("fire out");
         score += 2500;
         endTime = Time.timeSinceLevelLoad;
-        if(!alarmPressed)
+        if (!alarmPressed)
         {
-            
-              alarm.text="Forgot Alarm";
-              alarm.color=Color.green;
+            alarm.text = "Forgot Alarm";
+            alarm.color = Color.green;
             score -= 1500;
         }
         score -= (int)(endTime);
-        if(wrongExtinguisherUsed!=true)
+        if (wrongExtinguisherUsed != true)
         {
-            extinguisher.text="Correct Extinguisher";
-            extinguisher.color=Color.green;
-            
-            extinguisherSpectator.color=Color.black;
+            extinguisher.text = "Correct Extinguisher";
+            extinguisher.color = Color.green;
+
+            extinguisherSpectator.color = Color.black;
         }
-        scoreTxt.text=score.ToString();
-        scoreTxt.color=Color.white;
+        scoreTxt.text = score.ToString();
+        scoreTxt.color = Color.white;
         //scoreTxt.color=Color.white;
         //TextSerialisation textSerial = new TextSerialisation();
         //TextSerialisation.WriteFirstString(name,wrongExtinguisherUsed,forgotPinPull,alarmPressed,fuelLeft,score+"");
         //more processing of other data
+        buttonCert.SetActive(true);
+       
+    }
+
+    public void generateCert()
+    {
+        GetComponent<SimplePDF>().
+        WriteFirstRoom(name, wrongExtinguisherUsed, forgotPinPull, alarmPressed, fuelLeftBool, score + "");
     }
 
     void wrongExtinguisher()
@@ -103,6 +118,7 @@ public class binFireController : MonoBehaviour {
 
     void extinguisherRanOut()
     {
+        fuelLeftBool=false;
         fuelLeft.color=Color.red;
         fuelLeftSpectator.color=Color.red;
         score -= 500;

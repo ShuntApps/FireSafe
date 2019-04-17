@@ -10,13 +10,29 @@ public class computerFireController : MonoBehaviour {
     bool forgotPinPull;
     int score=9000;
     bool alarmPressed;
+    bool fuelLeftBool;
+    bool powerOffBool;
+
+
     public TextMeshProUGUI extinguisher;
     public TextMeshProUGUI pin;
     public TextMeshProUGUI alarm;
     public TextMeshProUGUI fuelLeft;
-
 	public TextMeshProUGUI powerOffLbl;
     public TextMeshProUGUI scoreTxt;
+
+    public TextMeshProUGUI extinguisherSpectator;
+    public TextMeshProUGUI pinSpectator;
+    public TextMeshProUGUI alarmSpectator;
+    public TextMeshProUGUI fuelLeftSpectator;
+    public TextMeshProUGUI powerOffSpectator;
+    public TextMeshProUGUI scoreTxtSpectator;
+    public TextMeshProUGUI nameTxtSpectator;
+
+    public GameObject buttonCert;
+
+    public string name;
+    public playerDataScriptableObject playerData;
 
 	/**
 	* Set up event manager to list for Power off, Fire out, Alarm pressed, pin pulled, right extinguisher used	
@@ -58,6 +74,7 @@ public class computerFireController : MonoBehaviour {
 
 	public void powerOff()
 	{
+        powerOffBool = true;
 		powerOffLbl.color=Color.green;
 		score+=1000;
 	}
@@ -78,6 +95,22 @@ public class computerFireController : MonoBehaviour {
         scoreTxt.text=score.ToString();
         scoreTxt.color=Color.white;
         //more processing of other data
+
+        buttonCert.SetActive(true);
+       
+    }
+      void Start()
+      {
+          name = playerData.playerName;
+          nameTxtSpectator.text = "User: " + name;
+          buttonCert.SetActive(false);
+          fuelLeftBool = true;
+      }
+
+    public void generateCert()
+    {
+        GetComponent<SimplePDF>().
+        WriteSecondRoom(name, wrongExtinguisherUsed, forgotPinPull, alarmPressed, powerOffBool, fuelLeftBool, score + "");
     }
 
     void wrongExtinguisher()
@@ -97,6 +130,7 @@ public class computerFireController : MonoBehaviour {
 
     void extinguisherRanOut()
     {
+        fuelLeftBool = false;
         fuelLeft.color=Color.red;
         score -= 500;
     }
