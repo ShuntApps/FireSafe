@@ -17,8 +17,18 @@ public class binFireController : MonoBehaviour {
     public TextMeshProUGUI fuelLeft;
     public TextMeshProUGUI scoreTxt;
 
+    public TextMeshProUGUI extinguisherSpectator;
+    public TextMeshProUGUI pinSpectator;
+    public TextMeshProUGUI alarmSpectator;
+    public TextMeshProUGUI fuelLeftSpectator;
+    public TextMeshProUGUI scoreTxtSpectator;
+
+    public string name;
+    public playerDataScriptableObject playerData;
+
 	// Use this for initialization
-	void Start () {		
+	void Start () {
+        name=playerData.playerName;
 	}
 	
 	// Update is called once per frame
@@ -45,24 +55,39 @@ public class binFireController : MonoBehaviour {
 
     void fireOut()
     {
+        Debug.Log("fire out");
         score += 2500;
         endTime = Time.timeSinceLevelLoad;
         if(!alarmPressed)
         {
+            
+              alarm.text="Forgot Alarm";
+              alarm.color=Color.green;
             score -= 1500;
         }
         score -= (int)(endTime);
         if(wrongExtinguisherUsed!=true)
         {
-            extinguisher.color=Color.white;
+            extinguisher.text="Correct Extinguisher";
+            extinguisher.color=Color.green;
+            
+            extinguisherSpectator.color=Color.black;
         }
         scoreTxt.text=score.ToString();
+        scoreTxt.color=Color.white;
+        //scoreTxt.color=Color.white;
+        //TextSerialisation textSerial = new TextSerialisation();
+        //TextSerialisation.WriteFirstString(name,wrongExtinguisherUsed,forgotPinPull,alarmPressed,fuelLeft,score+"");
         //more processing of other data
     }
 
     void wrongExtinguisher()
     {
         extinguisher.color=Color.red;
+        extinguisher.text="Wrong Extinguisher";
+        
+        extinguisherSpectator.color=Color.black;
+        extinguisherSpectator.text="Wrong Extinguisher";
         //set vars to ensure flags can be set in GUI
         wrongExtinguisherUsed = true;
         score -= 1000;
@@ -71,6 +96,7 @@ public class binFireController : MonoBehaviour {
     void forgotPin()
     {
         pin.color=Color.red;
+        pinSpectator.color=Color.red;
         forgotPinPull=true;
         score -= 500;
     }
@@ -78,12 +104,14 @@ public class binFireController : MonoBehaviour {
     void extinguisherRanOut()
     {
         fuelLeft.color=Color.red;
+        fuelLeftSpectator.color=Color.red;
         score -= 500;
     }
 
     void alarmIsPressed()
     {
         alarm.color=Color.green;
+        alarmSpectator.color=Color.green;
         alarmPressed = true;
     }
 }

@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ThirdSceneIdentify.unity
     guid: e22a8761484a77b4fac62d48ec57e3e0
+  - enabled: 0
+    path: Assets/Levels/simplePDF.unity
+    guid: b64f0705851444860a24250bafd03f25
   m_configObjects: {}

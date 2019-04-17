@@ -76,6 +76,7 @@ public class computerFireController : MonoBehaviour {
             extinguisher.color=Color.white;
         }
         scoreTxt.text=score.ToString();
+        scoreTxt.color=Color.white;
         //more processing of other data
     }
 

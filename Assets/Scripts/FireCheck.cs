@@ -35,6 +35,7 @@ public class FireCheck : MonoBehaviour {
         }
         else if(other.tag=="Water"&&isElectrical)
         {
+            NewEventManager.TriggerEvent("WaterOnElectricOff");
             waterOnElectric();
         }
         else if(other.tag=="Foam"&&allowFoam)
@@ -81,6 +82,8 @@ public class FireCheck : MonoBehaviour {
         foreach (ParticleSystem p in particles)
         {
             p.Stop();
+            
+        NewEventManager.TriggerEvent("fireOut");
         }
         if(!allowCO2)
         {
