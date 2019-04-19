@@ -20,6 +20,14 @@ public class SimplePDF : MonoBehaviour {
 
 	public string nameTxt;
 
+    public string pallets;
+    public string blocked;
+    public string water;
+    public string boxes;
+    public string plugs;
+    public string heating;
+    public string flammables;
+
 	public void WriteSecondRoom(string name,bool extinguisher, bool pin, bool alarm, bool powerOff, bool fuelLeft, string scoreTxt)
 	{
 	//forgot Pin will be true if forgot
@@ -37,6 +45,20 @@ public class SimplePDF : MonoBehaviour {
 		this.scoreTxt=scoreTxt;
 		StartCoroutine ( CreateSecondRoomPDF() );
 	}
+
+    public void WriteThirdRoom(string name, bool pallets, bool blocked, bool water, bool boxes, bool plugs, bool heating, bool flammable, string scoreTxt)
+    {
+        nameTxt = name;
+        this.pallets = pallets.ToString();
+        this.blocked = blocked.ToString();
+        this.water = water.ToString();
+        this.boxes = boxes.ToString();
+        this.plugs = plugs.ToString();
+        this.heating = heating.ToString();
+        this.flammables = flammable.ToString();
+        this.scoreTxt = scoreTxt;
+        StartCoroutine(CreateSecondRoomPDF());
+    }
 
 	public void WriteFirstRoom(string name,bool extinguisher, bool pin, bool alarm, bool fuelLeft, string scoreTxt)
 	{
@@ -66,6 +88,45 @@ public class SimplePDF : MonoBehaviour {
 
 	public Texture2D medal;
 
+    public IEnumerator CreateThirdRoomPDF()
+    {
+        pdfDocument myDoc = new pdfDocument(name + " Spotting FireHazards ", "FireSafeVR", false);
+        pdfPage myFirstPage = myDoc.addPage();
+        Debug.Log('\u263A');
+        myFirstPage.drawRectangle(20, 20, 822, 575, predefinedColor.csBlack, predefinedColor.csWhite);
+        myFirstPage.addParagraph("FireSafeVR", 30, 530, predefinedFont.csTimesBold, 55, 800, 20, predefinedAlignment.csCenter, new pdfColor(predefinedColor.csDarkRed));
+        myFirstPage.addParagraph("Certificate of Completion", 30, 480, predefinedFont.csTimesBold, 55, 800, 20, predefinedAlignment.csCenter, new pdfColor(predefinedColor.csDarkRed));
+        myFirstPage.addParagraph("Spotting Fire Hazards", 30, 410, predefinedFont.csTimes, 30, 800, 20, predefinedAlignment.csCenter, new pdfColor(predefinedColor.csDarkBlue));
+
+        myFirstPage.addParagraph("User: " + nameTxt, 30, 360, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
+        myFirstPage.addParagraph("Your score was: " + scoreTxt, 30, 310, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
+        myFirstPage.addParagraph("Hazards Found and missed: ", 30, 280, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
+        myFirstPage.addParagraph("Blocked fire exit: " + blocked, 30, 240, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
+        myFirstPage.addParagraph("Chained and Overloaded plugs: " + plugs, 30, 210, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
+        myFirstPage.addParagraph("Flammables unsecured: " + flammables, 30, 180, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
+        myFirstPage.addParagraph("Water near electricals: " + water, 30, 150, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
+        myFirstPage.addParagraph("Boxes discarded : " + boxes, 30, 120, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
+        myFirstPage.addParagraph("Blocked heating: " + heating , 30, 90, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
+        myFirstPage.addParagraph("Pallets discarded: " + pallets, 30, 90, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
+
+        string str = "FireSafe_Hazards_" + nameTxt + ".PDF";
+        str = str.Replace(" ", String.Empty);
+
+        string
+            //path = "file://"+Path.Combine(Application.streamingAssetsPath, "FireSafe_Electrical_"+str);
+        path = Path.Combine(Application.persistentDataPath, "\\" + str + "");
+
+        Debug.Log(path);
+        //myFirstPage.addText("Ran out of fuel in the extinguisher",250,400,predefinedFont.csTimes,18,new pdfColor(predefinedColor.csBlack));
+
+        //yield return StartCoroutine ( myFirstPage.newAddImageByTexture (medal,250,400 ) );
+        //yield return StartCoroutine ( );
+        //myFirstPage.addImage(ImageConversion.EncodeToPNG(medal),250,400,512,512);
+        //myFirstPage.addImage(medal.GetRawTextureData(),250,400,512,512);
+
+        yield return new WaitForSeconds(1);
+        myDoc.createPDF(str);
+    }
 
 	public IEnumerator CreateSecondRoomPDF () {
 		pdfDocument myDoc = new pdfDocument(name+" Electrical Fires ","FireSafeVR", false);

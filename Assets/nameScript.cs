@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class nameScript : MonoBehaviour {
 
@@ -23,5 +24,6 @@ public class nameScript : MonoBehaviour {
 			gameData.playerName=newNameTxt.text;
 		}
 	}
+
 
 }

@@ -10485,6 +10485,11 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 114165668747494150, guid: c27416cc197d8394194db961d8886514,
+        type: 2}
+      propertyPath: doorToOpen
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c27416cc197d8394194db961d8886514, type: 2}
   m_IsPrefabAsset: 0
@@ -11949,6 +11954,26 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: generateCert
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474049509404846, guid: ba15001766ea8f749beb4e0a8dfe35b8,
+        type: 2}
+      propertyPath: m_text
+      value: Name
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474049509404846, guid: ba15001766ea8f749beb4e0a8dfe35b8,
+        type: 2}
+      propertyPath: m_textInfo.characterCount
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474049509404846, guid: ba15001766ea8f749beb4e0a8dfe35b8,
+        type: 2}
+      propertyPath: m_textInfo.spaceCount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114474049509404846, guid: ba15001766ea8f749beb4e0a8dfe35b8,
+        type: 2}
+      propertyPath: m_textInfo.wordCount
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ba15001766ea8f749beb4e0a8dfe35b8, type: 2}

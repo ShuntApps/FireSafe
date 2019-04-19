@@ -66,6 +66,7 @@ public class computerFireController : MonoBehaviour {
 	{
         print("wrong Extinguisher used");
 		extinguisher.color=Color.red;
+        extinguisherSpectator.color = Color.red;
         //set vars to ensure flags can be set in GUI
         wrongExtinguisherUsed = true;
         wrongExtinguisher();
@@ -76,6 +77,7 @@ public class computerFireController : MonoBehaviour {
 	{
         powerOffBool = true;
 		powerOffLbl.color=Color.green;
+        powerOffSpectator.color = Color.green;
 		score+=1000;
 	}
 
@@ -116,6 +118,7 @@ public class computerFireController : MonoBehaviour {
     void wrongExtinguisher()
     {
         extinguisher.color=Color.red;
+        extinguisherSpectator.color = Color.red;
         //set vars to ensure flags can be set in GUI
         wrongExtinguisherUsed = true;
         score -= 1000;
@@ -124,6 +127,7 @@ public class computerFireController : MonoBehaviour {
     void forgotPin()
     {
         pin.color=Color.red;
+        pinSpectator.color = Color.red;
         forgotPinPull = true;
         score -= 500;
     }
@@ -132,12 +136,14 @@ public class computerFireController : MonoBehaviour {
     {
         fuelLeftBool = false;
         fuelLeft.color=Color.red;
+        fuelLeftSpectator.color = Color.red;
         score -= 500;
     }
 
     void alarmIsPressed()
     {
         alarm.color=Color.green;
+        alarmSpectator.color = Color.green;
         alarmPressed = true;
     }
 }

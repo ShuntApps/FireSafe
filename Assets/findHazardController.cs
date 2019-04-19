@@ -14,12 +14,27 @@ public class findHazardController : MonoBehaviour {
 	public TextMeshProUGUI heating;
 	public TextMeshProUGUI flammable;
 	public TextMeshProUGUI wrongCount;
+    public TextMeshProUGUI scoreTxt;
+    public TextMeshProUGUI timeTxt;
 
+    public bool palletsbool;
+    public bool blockedExitbool;
+    public bool waterbool;
+    public bool boxesbool;
+    public bool plugsbool;
+    public bool heatingbool;
+    public bool flammablebool;
+
+    /**
     public TextMeshProUGUI extinguisherSpectator;
     public TextMeshProUGUI pinSpectator;
     public TextMeshProUGUI alarmSpectator;
     public TextMeshProUGUI fuelLeftSpectator;
     public TextMeshProUGUI scoreTxtSpectator;
+    public TextMeshProUGUI nameTxtSpectator;*/
+
+      
+    public GameObject buttonCert;
 
     public string name;
     public playerDataScriptableObject playerData;
@@ -32,14 +47,26 @@ public class findHazardController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        name=playerData.playerName;
 		wrongCount.text=""+(numFound-numright);
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        //nameTxtSpectator.text = "User: " + name;
+        buttonCert.SetActive(false);
+
+    }
+
+    void Update()
+    {
+        scoreTxt.text = "Score: " + score;
+        timeTxt.text = "Time: " + Time.timeSinceLevelLoad;
+    }
+
+    public void generateCert()
+    {
+       // public void WriteThirdRoom(string name, bool pallets, bool blocked, bool water, bool boxes, bool plugs, bool heating, bool flammable, string scoreTxt)
+
+        GetComponent<SimplePDF>().
+            WriteThirdRoom(name, palletsbool, blockedExitbool, waterbool, boxesbool, plugsbool, heatingbool, flammablebool, scoreTxt.text);
+       
+    }
 
 	private void OnEnable() {
 		NewEventManager.StartListening("plugsunsafe",plugsMarked);

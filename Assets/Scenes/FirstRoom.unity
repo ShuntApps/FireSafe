@@ -2113,6 +2113,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114165668747494150, guid: c27416cc197d8394194db961d8886514,
+        type: 2}
+      propertyPath: doorToOpen
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c27416cc197d8394194db961d8886514, type: 2}
   m_IsPrefabAsset: 0
