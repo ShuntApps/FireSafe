@@ -56,7 +56,7 @@ public class findHazardController : MonoBehaviour {
     void Update()
     {
         scoreTxt.text = "Score: " + score;
-        timeTxt.text = "Time: " + Time.timeSinceLevelLoad;
+        timeTxt.text = "Time: " + Time.timeSinceLevelLoad.ToString("N0");
     }
 
     public void generateCert()
