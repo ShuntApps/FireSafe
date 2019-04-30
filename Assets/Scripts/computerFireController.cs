@@ -146,4 +146,9 @@ public class computerFireController : MonoBehaviour {
         alarmSpectator.color = Color.green;
         alarmPressed = true;
     }
+
+    public void pinpulled()
+    {
+        pinSpectator.color=Color.green;
+    }
 }

@@ -2929,6 +2929,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 2024209785}
     m_Modifications:
+    - target: {fileID: 114960909081559194, guid: 1aeaf0703a0ecbc48b080a59bc538979,
+        type: 2}
+      propertyPath: OnGrab.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4593791888006926, guid: 1aeaf0703a0ecbc48b080a59bc538979, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1.7962127
@@ -2968,6 +2973,36 @@ Prefab:
     - target: {fileID: 4593791888006926, guid: 1aeaf0703a0ecbc48b080a59bc538979, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.90000045
+      objectReference: {fileID: 0}
+    - target: {fileID: 114960909081559194, guid: 1aeaf0703a0ecbc48b080a59bc538979,
+        type: 2}
+      propertyPath: OnGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114960909081559194, guid: 1aeaf0703a0ecbc48b080a59bc538979,
+        type: 2}
+      propertyPath: OnGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114960909081559194, guid: 1aeaf0703a0ecbc48b080a59bc538979,
+        type: 2}
+      propertyPath: OnGrab.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114960909081559194, guid: 1aeaf0703a0ecbc48b080a59bc538979,
+        type: 2}
+      propertyPath: OnGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1316788740}
+    - target: {fileID: 114960909081559194, guid: 1aeaf0703a0ecbc48b080a59bc538979,
+        type: 2}
+      propertyPath: OnGrab.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: pinPulled
+      objectReference: {fileID: 0}
+    - target: {fileID: 114960909081559194, guid: 1aeaf0703a0ecbc48b080a59bc538979,
+        type: 2}
+      propertyPath: OnGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1aeaf0703a0ecbc48b080a59bc538979, type: 2}
@@ -6402,6 +6437,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 2024209785}
     m_Modifications:
+    - target: {fileID: 114813921917875892, guid: 8902fca4d5569734cb77fa0b847c742a,
+        type: 2}
+      propertyPath: OnGrab.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4762648340912230, guid: 8902fca4d5569734cb77fa0b847c742a, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1.8272126
@@ -6454,6 +6494,31 @@ Prefab:
     - target: {fileID: 4762648340912230, guid: 8902fca4d5569734cb77fa0b847c742a, type: 2}
       propertyPath: m_LocalScale.z
       value: 1.2000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 114813921917875892, guid: 8902fca4d5569734cb77fa0b847c742a,
+        type: 2}
+      propertyPath: OnGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114813921917875892, guid: 8902fca4d5569734cb77fa0b847c742a,
+        type: 2}
+      propertyPath: OnGrab.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114813921917875892, guid: 8902fca4d5569734cb77fa0b847c742a,
+        type: 2}
+      propertyPath: OnGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1316788740}
+    - target: {fileID: 114813921917875892, guid: 8902fca4d5569734cb77fa0b847c742a,
+        type: 2}
+      propertyPath: OnGrab.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: pinPulled
+      objectReference: {fileID: 0}
+    - target: {fileID: 114813921917875892, guid: 8902fca4d5569734cb77fa0b847c742a,
+        type: 2}
+      propertyPath: OnGrab.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8902fca4d5569734cb77fa0b847c742a, type: 2}

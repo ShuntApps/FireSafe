@@ -78,7 +78,7 @@ public class binFireController : MonoBehaviour {
             extinguisher.text = "Correct Extinguisher";
             extinguisher.color = Color.green;
 
-            extinguisherSpectator.color = Color.black;
+            extinguisherSpectator.color = Color.green;
         }
         scoreTxt.text = score.ToString();
         scoreTxt.color = Color.white;
@@ -89,6 +89,19 @@ public class binFireController : MonoBehaviour {
         buttonCert.SetActive(true);
        
     }
+
+    [ContextMenu ("Test Cert")]
+    public void testCert()
+    {
+        name="Al Parker";
+        wrongExtinguisherUsed=false;
+        forgotPinPull=true;
+        alarmPressed=true;
+        fuelLeftBool=false;
+        score=11666;
+        generateCert();
+    }
+
 
     public void generateCert()
     {
@@ -101,7 +114,7 @@ public class binFireController : MonoBehaviour {
         extinguisher.color=Color.red;
         extinguisher.text="Wrong Extinguisher";
         
-        extinguisherSpectator.color=Color.black;
+        extinguisherSpectator.color=Color.green;
         extinguisherSpectator.text="Wrong Extinguisher";
         //set vars to ensure flags can be set in GUI
         wrongExtinguisherUsed = true;
@@ -129,5 +142,10 @@ public class binFireController : MonoBehaviour {
         alarm.color=Color.green;
         alarmSpectator.color=Color.green;
         alarmPressed = true;
+    }
+
+    public void pinPulled()
+    {
+        pinSpectator.color=Color.green;
     }
 }

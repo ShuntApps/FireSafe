@@ -9388,8 +9388,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.5955572, y: 10.845012, z: 3.5017183}
+  m_Center: {x: 0.02045393, y: 4.9225063, z: 0.2708809}
 --- !u!4 &621859517 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 64c1854a58317e84dabd0a9fb158b4a1,
@@ -18019,6 +18019,18 @@ Prefab:
     - target: {fileID: 4587851817346586, guid: 53a48a09fe28d634e988553a6037a2b4, type: 2}
       propertyPath: m_RootOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4412076185383858, guid: 53a48a09fe28d634e988553a6037a2b4, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.487
+      objectReference: {fileID: 0}
+    - target: {fileID: 4412076185383858, guid: 53a48a09fe28d634e988553a6037a2b4, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.913
+      objectReference: {fileID: 0}
+    - target: {fileID: 4412076185383858, guid: 53a48a09fe28d634e988553a6037a2b4, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.35
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 53a48a09fe28d634e988553a6037a2b4, type: 2}
