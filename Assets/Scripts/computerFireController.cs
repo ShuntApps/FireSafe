@@ -150,5 +150,6 @@ public class computerFireController : MonoBehaviour {
     public void pinpulled()
     {
         pinSpectator.color=Color.green;
+         pin.color=Color.green;
     }
 }

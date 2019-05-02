@@ -59,10 +59,25 @@ public class findHazardController : MonoBehaviour {
         timeTxt.text = "Time: " + Time.timeSinceLevelLoad.ToString("N0");
     }
 
+   [ContextMenu ("Test Cert")]
+    public void testCert()
+    {
+        name="Al Parker";
+	palletsbool=true;
+   	blockedExitbool=true;
+    waterbool=true;
+    boxesbool=false;
+    plugsbool=true;
+    heatingbool=false;
+    flammablebool=true;
+        score=10266;
+        generateCert();
+    }
+
     public void generateCert()
     {
        // public void WriteThirdRoom(string name, bool pallets, bool blocked, bool water, bool boxes, bool plugs, bool heating, bool flammable, string scoreTxt)
-
+		StopAllCoroutines();
         GetComponent<SimplePDF>().
             WriteThirdRoom(name, palletsbool, blockedExitbool, waterbool, boxesbool, plugsbool, heatingbool, flammablebool, scoreTxt.text);
        

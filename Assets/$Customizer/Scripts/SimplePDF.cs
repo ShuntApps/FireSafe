@@ -57,7 +57,7 @@ public class SimplePDF : MonoBehaviour {
         this.heating = heating.ToString();
         this.flammables = flammable.ToString();
         this.scoreTxt = scoreTxt;
-        StartCoroutine(CreateSecondRoomPDF());
+        StartCoroutine(CreateThirdRoomPDF());
     }
 
 	public void WriteFirstRoom(string name,bool extinguisher, bool pin, bool alarm, bool fuelLeft, string scoreTxt)
@@ -100,14 +100,14 @@ public class SimplePDF : MonoBehaviour {
 
         myFirstPage.addParagraph("User: " + nameTxt, 30, 360, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
         myFirstPage.addParagraph("Your score was: " + scoreTxt, 30, 310, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
-        myFirstPage.addParagraph("Hazards Found and missed: ", 30, 280, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
+        myFirstPage.addParagraph("Hazards Found: ", 30, 280, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
         myFirstPage.addParagraph("Blocked fire exit: " + blocked, 30, 240, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
         myFirstPage.addParagraph("Chained and Overloaded plugs: " + plugs, 30, 210, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
         myFirstPage.addParagraph("Flammables unsecured: " + flammables, 30, 180, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
         myFirstPage.addParagraph("Water near electricals: " + water, 30, 150, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
         myFirstPage.addParagraph("Boxes discarded : " + boxes, 30, 120, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
         myFirstPage.addParagraph("Blocked heating: " + heating , 30, 90, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
-        myFirstPage.addParagraph("Pallets discarded: " + pallets, 30, 90, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
+        myFirstPage.addParagraph("Pallets discarded: " + pallets, 30, 60, predefinedFont.csTimes, 22, 800, 20, predefinedAlignment.csCenter);
 
         string str = "FireSafe_Hazards_" + nameTxt + ".PDF";
         str = str.Replace(" ", String.Empty);
@@ -164,6 +164,7 @@ public class SimplePDF : MonoBehaviour {
 	
 		yield return new WaitForSeconds(1);
 		myDoc.createPDF(str);
+		Debug.Log("Success!");
 	}
 
 	public IEnumerator CreateFirstRoomPDF () {
